@@ -1,0 +1,13 @@
+{
+    "name": "hello-web",
+    "description": "A Golang Web Hello World",
+    "keywords": [
+        "go",
+        "web",
+        "example"
+    ],
+    "image": "heroku/go:1.7",
+    "mount_dir": "src/github.com/rjansen/hello-web",
+    "website": "http://github.com/rjansen/hello-web",
+    "repository": "http://github.com/rjansen/hello-web"
+}
