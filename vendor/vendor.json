@@ -3,4 +3,8 @@
 	"ignore": "test",
 	"package": [],
 	"rootPath": "github.com/rjansen/hello-web"
+        "heroku": {
+            "install" : [ "." ],
+            "goVersion": "go1.7"
+        }
 }
