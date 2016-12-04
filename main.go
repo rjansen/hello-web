@@ -13,11 +13,11 @@ func main() {
             fmt.Fprintf(w, "Hello World - Path=%s", r.URL.Path[1:])
         },
     )
-    port := os.Getenv("HELLO_PORT")
+    port := os.Getenv("PORT")
     if strings.TrimSpace(port) == "" {
-        port = "8080"
+        panic("Variable env.PORT is required!")
     }
-    address := fmt.Sprintf(":%s", port)
+    address := ":" + port
     fmt.Printf("Starting Hello-Web at %s\n", address)
 
     if err := http.ListenAndServe(address, nil); err != nil {
